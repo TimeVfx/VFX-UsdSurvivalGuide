@@ -475,7 +475,7 @@ from pxr import Sdf, Tf, Usd, UsdGeom
 stage = Usd.Stage.CreateInMemory()
 prim_path = Sdf.Path("/bicycle")
 prim = stage.DefinePrim(prim_path, "Xform")
-prim.ApplyAPI("UsdGeomModelAPI")
+prim.ApplyAPI("GeomModelAPI")
 prim_def = prim.GetPrimDefinition()
 print(prim_def.GetAppliedAPISchemas()) # Returns: ['GeomModelAPI']
 print(prim_def.GetPropertyNames()) 

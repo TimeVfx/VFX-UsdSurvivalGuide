@@ -1,20 +1,32 @@
-# Debugging
+# Debugging [调试]
 The Usd API ships with a [debug class](https://openusd.org/dev/api/class_tf_debug.html), which allows you to log different messages by setting the `TF_DEBUG` environment variable to one of the symbols. This is useful to see if plugins are loaded or to see if the asset resolver is correctly hooked in.
 
-## TL;DR - Debug In-A-Nutshell
+[ Usd API 附带一个调试类，它允许您通过将 TF_DEBUG 环境变量设置为其中一个符号来记录不同的消息. 这对于查看插件是否已加载或资产解析器是否正确连接非常有用]
+
+## TL;DR - Debug In-A-Nutshell [概述]
 - You can set the `TF_DEBUG` environment variable to one the the values listed below or symbol name from a plugin.
+
+    [ 您可以将 TF_DEBUG 环境变量设置为下面列出的值或插件中的符号名称之一]
 - You can also activate a symbol in the active session via Python: ```pxr.Tf.Debug.SetDebugSymbolsByName("AR_RESOLVER_INIT", True)```
 
+    [ 您还可以通过 Python 在活动会话中激活符号： pxr.Tf.Debug.SetDebugSymbolsByName("AR_RESOLVER_INIT", True)]
+
 ## What should I use it for?
+
+[ 我应该用它做什么？]
 ~~~admonish tip
 Enabling debug symbols, allows you to inspect specific log outputs of Usd. Typical use cases are to check if plugins are loaded correctly or if data is properly being refreshed.
+
+[ 启用调试符号，允许您检查 usd 的特定日志输出. 典型的用例是检查插件是否正确加载或数据是否正确刷新]
 ~~~
 
-## Resources
+## Resources [资源]
 - [Debug API Docs](https://openusd.org/dev/api/class_tf_debug.html)
 
-## Overview
+## Overview [概述]
 Environment Variables:
+
+[ 环境变量]
 
 | Name                  | Value                |
 |-----------------------|----------------------|
@@ -23,12 +35,18 @@ Environment Variables:
 
 ~~~admonish tip
 Activating the log output via bash:
+
+[ 通过 bash 激活日志输出]
 ```bash
 export TF_DEBUG=AR_RESOLVER_INIT
 ```
 Then launch your app.
+
+[ 然后启动您的应用程序]
 ~~~
 You can also set them interactively in the active session via Python. Wildcarding is allowd to turn on multiple debug symbols in batch.
+
+[ 您还可以通过 Python 在活动会话中以交互方式设置它们. 允许使用通配符批量打开多个调试符号]
 
 ~~~admonish tip
 ```python
@@ -39,7 +57,11 @@ activated_symbols = pxr.Tf.Debug.SetDebugSymbolsByName("AR_*", True)
 
 External plugins (like asset resolvers) often register own debug symbols which you can then use to see exactly what is going on.
 
+[ 外部插件（如资产解析器）通常会注册自己的调试符号，然后您可以使用它们来准确查看正在发生的情况]
+
 To get a list of value `TF_DEBUG`values you can run:
+
+[ 要获取值 TF_DEBUG 值的列表，您可以运行]
 ~~~admonish info title=""
 ```python
 {{#include ../../../../code/core/elements.py:debuggingTokens}}
@@ -47,6 +69,8 @@ To get a list of value `TF_DEBUG`values you can run:
 ~~~
 
 Full list of debug codes:
+
+[ 调试代码的完整列表]
 
 | Variable Name | Description |
 |----|----|
@@ -188,3 +212,5 @@ Full list of debug codes:
 | USD_VALUE_RESOLUTION | USD trace of layers inspected as values are resolved |
 
 You scrolled all the way to the end 🥳. Congratulations, you have now earned the rank of "Usd Nerd"!
+
+[ 您一直滚动到最后🥳。恭喜您，您现已获得“Usd 达人”称号！]

@@ -1,6 +1,8 @@
-# Commonly used schemas ('Classes' in OOP terminology) for production
+# Commonly used schemas ('Classes' in OOP terminology) for production [生产中常用的模式（面向对象变成中的“类”）]
 
 Here is a list of the most used production schemas with a short explanation of what the schema provides:
+
+[ 以下是最常用的生产模式的列表，并简要说明了该模式提供的功能]
 
 - Typed:
     - [UsdGeom.Imageable](https://openusd.org/dev/api/class_usd_geom_imageable.html): Purpose, Visibility, Bounding Box

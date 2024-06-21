@@ -1,4 +1,5 @@
-REM Source setup
+set PATH=%~dp0;%PATH%
+REM REM Source setup
 set REPO_ROOT=%~dp0
 REM Clean existing build
 rmdir %REPO_ROOT%docs\book /S /Q

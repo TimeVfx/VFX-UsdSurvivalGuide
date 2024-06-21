@@ -1,5 +1,7 @@
-# Resources
+# Resources [资源]
 If you are interested in diving into topics yourself, here is a rough categorization:
+
+[ 如果您有兴趣自己深入研究主题，这里有一个粗略的分类]
 
 ### General
 - [C++ Classes](https://openusd.org/release/api/annotated.html)
