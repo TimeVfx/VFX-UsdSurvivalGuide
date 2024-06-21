@@ -7,7 +7,7 @@
 This repository aims to be a practical onboarding guide to [USD](https://openusd.org/release/index.html) for software developers and pipeline TDs.
 For more information what makes this guide unique, see the [motivation](./introduction/motivation.md) section.
 
-[ 该存储库旨在为软件开发人员和流程TD 提供实用的 USD 入门指南。关于本指南更多的独特之处信息，请参阅 [序言](./introduction/motivation.md) 部分]
+[ 该存储库旨在为软件开发人员和流程TD 提供实用的 USD 入门指南. 关于本指南更多的独特之处信息，请参阅 [序言](./introduction/motivation.md) 部分]
 
 ```admonish success title="Siggraph Presentation"
 This guide was officially introduced at [Siggraph 2023 - Houdini Hive](https://www.sidefx.com/houdini-hive/siggraph-2023/#usd). Special thanks to SideFX for hosting me and throwing such a cool Houdini lounge and presentation line up!

@@ -62,11 +62,11 @@ At this point of the guide, we just want to state, that we didn't re-invent the 
 ## Contributing and Acknowledgements [ 贡献和致谢 ]
 Please consider contributing back to the Usd project in the  official [Usd Repository](https://github.com/PixarAnimationStudios/USD) and via the [Usd User groups](https://wiki.aswf.io/display/WGUSD/USD+Working+Group).
 
-[ 请考虑通过官方[USD存储库](https://github.com/PixarAnimationStudios/USD)和[USD用户组](https://wiki.aswf.io/display/WGUSD/USD+Working+Group)，为USD项目做出贡献。]
+[ 请考虑通过官方[USD存储库](https://github.com/PixarAnimationStudios/USD)和[USD用户组](https://wiki.aswf.io/display/WGUSD/USD+Working+Group)，为USD项目做出贡献]
 
 Feel free to fork this repository and share further examples/improvements.
 If you run into issues, please flag them by [submitting a ticket](https://github.com/LucaScheller/VFX-UsdSurvivalGuide/issues/new).
 
-[ 随意复制本仓库和分享仓库的案例, 如果您遇到任何问题，请通过提交工单来标明]
+[ 随意复制本仓库和分享仓库的案例, 如果您遇到任何问题 [submitting a ticket](https://github.com/LucaScheller/VFX-UsdSurvivalGuide/issues/new)]
 
 {{#include ../contributors.md}}
